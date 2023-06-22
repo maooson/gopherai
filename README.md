@@ -40,4 +40,4 @@ pnpm dev
 
 ## License
 
-Licensed under the [MIT license](https://github.com/maooson/aibot-demo/blob/main/LICENSE.md).
+Licensed under the [MIT license](https://github.com/maooson/gopherai/blob/main/LICENSE.md).
