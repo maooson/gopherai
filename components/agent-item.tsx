@@ -13,7 +13,7 @@ interface AgentItemProps {
 export function AgentItem({ agent }: AgentItemProps) {
   return (
     <div className="flex items-center justify-between p-4">
-      <div className="grow grid gap-1">
+      <div className="grid grow gap-1">
         <Link
           href={`/dashboard/agent/${agent.id}`}
           className="font-semibold hover:underline"
@@ -26,7 +26,7 @@ export function AgentItem({ agent }: AgentItemProps) {
           </p>
         </div>
       </div>
-      <div className="flex-none px-8 w-36 text-center">
+      <div className="w-36 flex-none px-8 text-center">
         <Badge variant={agent.status ? "default" : "secondary"}>{agent.status ? "ACTIVE" : "INACTIVE"}</Badge>
       </div>
       <AgentOperations agent={{ id: agent.id, name: agent.name }} />

@@ -121,7 +121,7 @@ export function AgentForm({ agent }: AgentFormProps) {
                 <FormControl>
                   <Textarea
                     placeholder="Tell us more about this agent"
-                    className="focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-ring focus-visible:ring-offset-0 resize-none"
+                    className="resize-none focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-ring focus-visible:ring-offset-0"
                     {...field}
                   />
                 </FormControl>
