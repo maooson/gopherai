@@ -13,7 +13,7 @@ interface AuthContextType {
 const AuthContext = createContext({} as AuthContextType);
 
 export default function AuthProvider({ children }) {
-  const [user, setUser] = useState<AuthContextType['user']>()
+  const [user, setUser] = useState<AuthContextType['user']>(null)
   const [authenticated, setAuthenticated] = useState(false);
 
   useEffect(function () {
