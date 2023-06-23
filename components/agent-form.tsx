@@ -6,18 +6,25 @@ import { useRouter } from "next/navigation"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Agent } from "@prisma/client"
 import { useForm } from "react-hook-form"
-import TextareaAutosize from "react-textarea-autosize"
 import * as z from "zod"
 
 import { cn } from "@/lib/utils"
 import { agentPatchSchema } from "@/lib/validations/agent"
-import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
 import { buttonVariants } from "@/components/ui/button"
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage
+} from "@/components/ui/form"
+import { Input } from "@/components/ui/input"
+import { Switch } from "@/components/ui/switch"
+import { Textarea } from "@/components/ui/textarea"
 import { toast } from "@/components/ui/use-toast"
 import { Icons } from "@/components/icons"
-import { Switch } from "@/components/ui/switch"
-import { Textarea } from "./ui/textarea"
 
 interface AgentFormProps {
   agent: Pick<Agent, "id" | "name" | "description" | "status">

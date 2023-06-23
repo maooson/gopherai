@@ -2,9 +2,9 @@ import Link from "next/link"
 import { Agent } from "@prisma/client"
 
 import { formatDate } from "@/lib/utils"
+import { Badge } from "@/components/ui/badge"
 import { Skeleton } from "@/components/ui/skeleton"
 import { AgentOperations } from "@/components/agent-operations"
-import { Badge } from "@/components/ui/badge"
 
 interface AgentItemProps {
   agent: Pick<Agent, "id" | "name" | "status" | "createdAt">
